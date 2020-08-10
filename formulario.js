@@ -64,3 +64,7 @@ function validarForm(e) {
 }
 formulario.addEventListener("submit", validarForm);
 //}())
+
+//Validar nombre de usario no sean numeros
+
+// validar que el correo exista
