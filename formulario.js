@@ -42,12 +42,25 @@ function validarSexo(e) {
   }
 }
 
+function validarTerminos(e) {
+  if ( terminos.checked == false ) {
+    error.style.display = "block";
+    error.innerHTML += "<li>Por favor acepta los terminos</li>";
+    console.log("Por favor acepta los terminos");
+
+    e.preventDefault();
+  } else {
+    error.style.display = "none";
+  }
+}
+
 function validarForm(e) {
-  error.innerHTML = '';
-  
+  error.innerHTML = "";
+
   validarNombre(e);
   validarCorreo(e);
   validarSexo(e);
+  validarTerminos(e);
 }
-formulario.addEventListener('submit', validarForm);
+formulario.addEventListener("submit", validarForm);
 //}())
