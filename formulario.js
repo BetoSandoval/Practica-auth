@@ -1,4 +1,4 @@
-//(function () {
+(function () {
 var formulario = document.getElementById("formulario"),
   nombre = formulario.nombre,
   correo = formulario.correo,
@@ -63,7 +63,7 @@ function validarForm(e) {
   validarTerminos(e);
 }
 formulario.addEventListener("submit", validarForm);
-//}())
+}())
 
 //Validar nombre de usario no sean numeros
 
